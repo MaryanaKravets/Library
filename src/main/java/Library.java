@@ -20,7 +20,7 @@ class Library {
 
 
     void nameOfBook(LocalDate localDate) {
-        System.out.println(map.get(localDate));
+        System.out.println(map.getOrDefault((localDate),"You didn't take the book on this day"));
 
     }
 

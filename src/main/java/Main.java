@@ -19,9 +19,9 @@ public class Main {
             library.nameOfBook(LocalDate.parse(str));
             scanner.close();
         } catch (java.util.InputMismatchException e) {
-            System.out.println("You have entered the wrong date format");
+            System.out.println("You have entered the wrong date format!");
         } catch (DateTimeException e) {
-            System.out.println("You didn't take the book on this day");
+            System.out.println("You entered the wrong date!");
         }
 
 
