@@ -19,20 +19,17 @@ class Library {
     }
 
 
-    void nameOfBook(LocalDate localDate) {
-        System.out.println(map.getOrDefault((localDate),"You didn't take the book on this day"));
-
+    void findBook(LocalDate localDate) {
+        System.out.println(map.getOrDefault((localDate), "You didn't take the book on this day"));
     }
 
     void printData() {
         System.out.println("List of dates: " + map.keySet());
-
     }
 
 
     void printBoks() {
         System.out.println("Lists of books: " + map.values());
-
     }
 
 
