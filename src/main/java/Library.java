@@ -19,7 +19,7 @@ class Library {
     }
 
 
-    void findBook(LocalDate localDate) {
+    void findBookByDate(LocalDate localDate) {
         System.out.println(map.getOrDefault((localDate), "You didn't take the book on this day"));
     }
 

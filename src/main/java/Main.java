@@ -16,7 +16,7 @@ public class Main {
         try {
             Scanner scanner = new Scanner(System.in);
             String str = scanner.next(Pattern.compile("([0-9]{4})-([0-9]{2}-([0-9]{2}))"));
-            library.findBook(LocalDate.parse(str));
+            library.findBookByDate(LocalDate.parse(str));
             scanner.close();
         } catch (InputMismatchException e) {
             System.err.println("You have entered the wrong date format!");
